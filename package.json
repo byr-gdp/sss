@@ -1,0 +1,16 @@
+{
+  "name": "sss",
+  "version": "0.0.1",
+  "description": "a simple static server",
+  "main": "./index.js",
+  "bin": {
+    "sss": "index.js"
+  },
+  "scripts": {},
+  "author": "gongdapeng",
+  "license": "MIT",
+  "dependencies": {
+    "serve-index": "^1.9.1",
+    "serve-static": "^1.13.2"
+  }
+}
