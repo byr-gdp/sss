@@ -4,8 +4,6 @@ const path = require('path');
 const http = require('http');
 const serveStatic = require('serve-static');
 const serveIndex = require('serve-index');
-// const contentDisposition = require('content-disposition'); // 如果需要支持文件下载
-
 
 // 各种路径的深坑：https://github.com/imsobear/blog/issues/48
 // console.log(__dirname);
@@ -33,7 +31,7 @@ const server = http.createServer((req, res) => {
   });
 });
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 server.listen(port);
 server.on('listening', () => {
   console.log('listening at port ' + port);
